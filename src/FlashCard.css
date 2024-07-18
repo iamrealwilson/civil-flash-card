@@ -41,7 +41,21 @@
 
 
 @media only screen and (max-width: 600px) {
-  body {
+  .card {
+    font-size: 16px;
+  }
+
+  .flashcard {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    font-size: 16px;
+  }
+
+  .flashcard {
     font-size: 16px;
   }
 }
