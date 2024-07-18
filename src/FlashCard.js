@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import './FlashCard.css';
+import {isMobile} from 'react-device-detect';
 
 const FlashCard = ({ front, back, isFlipped, onFlip }) => {
   const { transform, opacity } = useSpring({
@@ -9,7 +10,12 @@ const FlashCard = ({ front, back, isFlipped, onFlip }) => {
     config: { mass: 5, tension: 500, friction: 80 }
   });
 
+  let fontSize = isMobile ? '60px' : '60px';
+
+  console.log('Font Size: ' + fontSize);
+
   return (
+
     <div className="flashcard" onClick={onFlip}>
       <animated.div
         className="content"
@@ -29,7 +35,7 @@ const FlashCard = ({ front, back, isFlipped, onFlip }) => {
             style={{
               opacity: 1,
               textAlign: 'center',
-              fontSize: '60px',
+              fontSize: {fontSize},
               fontWeight: 'bold',
               fontFamily: 'Roboto, sans-serif', // Example: Custom font
               color: '#333',
@@ -45,7 +51,7 @@ const FlashCard = ({ front, back, isFlipped, onFlip }) => {
               opacity,
               transform: 'rotateY(360deg)',
               textAlign: 'center',
-              fontSize: '60px',
+              fontSize: {fontSize},
               fontWeight: 'bold',
               fontFamily: 'Roboto, sans-serif', // Example: Custom font
               color: '#333',
