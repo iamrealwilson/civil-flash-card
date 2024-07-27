@@ -23,14 +23,13 @@ import { useNavigate } from 'react-router-dom';
 
 const App = () => {
   const subject = localStorage.getItem('item');
+  if (subject === null || subject === undefined){
+    subject = 'Civil Law';
+  }
   const classes = useStyles()
   const isAuthenticated = localStorage.getItem('authenticated')
   const navigate = useNavigate();
-
-  console.log(isAuthenticated)
-
   if (isAuthenticated == null || isAuthenticated === undefined || isAuthenticated !== 'true'){
-    localStorage.setItem('item', 'Civil Law')
     navigate('/signin');
   }else{
     return (
