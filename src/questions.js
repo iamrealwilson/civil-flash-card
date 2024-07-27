@@ -1,5 +1,5 @@
 
-const flashcards = [
+const civil = [
     {
         "question": "What is the title of the act mentioned in the text?",
         "answer": "The Civil Code of the Philippines."
@@ -8585,24 +8585,12 @@ const flashcards = [
         "answer": "The issue was whether Rule 109 of the Rules of Court may be used to change the entry in a birth certificate regarding the filiation of a child."
     },
     {
-        "question": "What was the ruling in Leonor vs. CA, 70 SCAD 57, 256 SCRA 69 regarding the cancellation of the registration of a marriage?",
-        "answer": "The Court held that the summary procedure under Rule 108, and for that matter under Article 412 of the Civil Code cannot be used to change the civil status of a person from married to single and of their children from legitimate to illegitimate."
-    },
-    {
-        "question": "What was the ruling in Republic vs. Valencia, 141 SCRA 462 regarding corrections involving the nationality or citizenship of a person?",
-        "answer": "The Supreme Court held that corrections involving the nationality or citizenship of a person were substantial and could not be effected except in adversarial proceedings."
-    },
-    {
         "question": "What is the definition of 'adversary proceeding' according to Black's Law Dictionary?",
         "answer": "According to Black's Law Dictionary, an 'adversary proceeding' is one having opposing parties, contested, as distinguished from an ex-parte application, one in which the party seeking relief has given legal warning to the other party, and afforded the latter an opportunity to contest it."
     },
     {
         "question": "What changes did Sarah Zita Labrador seek in her birth certificate?",
         "answer": "Sarah Zita Labrador sought to have the name appearing on the birth certificate changed from 'Sarah Zita Erasmo' to 'Sarah Zita Cañon,' thereby transforming the filiation of the child from legitimate to illegitimate; second, she likewise sought to have the name of Sara Zita’s mother, which appeared as 'Rosemarie' in the child’s birth record, changed to 'Zita Rosario.'"
-    },
-    {
-        "question": "What was the ruling in Labayo-Rowe vs. Republic, 168 SCRA 294 regarding the change of a child's civil status from 'married' to 'single'?",
-        "answer": "The Supreme Court ruled that the trial court erred in granting Labayo-Rowe’s petition, because the proper parties had not been impleaded; and the proceedings had been sufficiently adversarial."
     },
     {
         "question": "What is the ruling on changing a person's first name or nickname under RA 9048?",
@@ -8631,4 +8619,4 @@ const flashcards = [
 
 ];
 
-export default flashcards;
+export default civil;
