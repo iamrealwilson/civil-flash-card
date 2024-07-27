@@ -30,6 +30,7 @@ const App = () => {
   console.log(isAuthenticated)
 
   if (isAuthenticated == null || isAuthenticated === undefined || isAuthenticated !== 'true'){
+    localStorage.setItem('item', 'Civil Law')
     navigate('/signin');
   }else{
     return (
