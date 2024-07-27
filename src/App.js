@@ -32,7 +32,7 @@ const App = () => {
   if (isAuthenticated == null || isAuthenticated === undefined || isAuthenticated !== 'true'){
     navigate('/signin');
   }else{
-      return (
+    return (
 
       <div className="App">
         { subject === 'Civil Law' && <FlashCardList flashcards={civil} />  }
